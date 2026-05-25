@@ -8,6 +8,7 @@ import PipelinePage from './pages/PipelinePage'
 import LeadsPage from './pages/LeadsPage'
 import MetricasPage from './pages/MetricasPage'
 import UsuariosPage from './pages/UsuariosPage'
+import CalendarioPage from './pages/CalendarioPage'
 
 function ProtectedRoute({ children, roles }) {
   const { user, loading } = useAuth()
@@ -52,6 +53,12 @@ function AppRoutes() {
       <Route path="/leads" element={
         <ProtectedRoute>
           <Layout><LeadsPage /></Layout>
+        </ProtectedRoute>
+      } />
+
+      <Route path="/calendario" element={
+        <ProtectedRoute>
+          <Layout><CalendarioPage /></Layout>
         </ProtectedRoute>
       } />
 

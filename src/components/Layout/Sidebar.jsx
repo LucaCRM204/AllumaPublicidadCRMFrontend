@@ -6,6 +6,7 @@ import toast from 'react-hot-toast'
 const NAV = [
   { to: '/pipeline', icon: '⬡', label: 'Pipeline' },
   { to: '/leads', icon: '◈', label: 'Leads' },
+  { to: '/calendario', icon: '◷', label: 'Calendario' },
   { to: '/metricas', icon: '◎', label: 'Métricas', roles: ['owner', 'supervisor'] },
   { to: '/usuarios', icon: '◉', label: 'Usuarios', roles: ['owner'] },
 ]

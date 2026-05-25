@@ -11,8 +11,9 @@ const ESTADOS = [
   { id: 'contactando', label: '📞 Contactando' },
   { id: 'interesado',  label: '🔥 Interesado' },
   { id: 'propuesta',   label: '📋 Propuesta' },
-  { id: 'ganado',      label: '✅ Ganado' },
-  { id: 'perdido',     label: '❌ Perdido' },
+  { id: 'entrevista',  label: '🤝 Entrevista / Reunión' },
+  { id: 'vendido',     label: '✅ Vendido' },
+  { id: 'sin_interes', label: '👋 Sin interés' },
 ]
 
 const TIPO_ICONS = {

@@ -15,12 +15,13 @@ import { format } from 'date-fns'
 import { es } from 'date-fns/locale'
 
 const COLUMNAS = [
-  { id: 'nuevo',       label: '📥 Nuevo',       color: 'var(--nuevo)' },
-  { id: 'contactando', label: '📞 Contactando',  color: 'var(--contactando)' },
-  { id: 'interesado',  label: '🔥 Interesado',   color: 'var(--interesado)' },
-  { id: 'propuesta',   label: '📋 Propuesta',    color: 'var(--propuesta)' },
-  { id: 'ganado',      label: '✅ Ganado',        color: 'var(--ganado)' },
-  { id: 'perdido',     label: '❌ Perdido',       color: 'var(--perdido)' },
+  { id: 'nuevo',       label: '📥 Nuevo',              color: 'var(--nuevo)' },
+  { id: 'contactando', label: '📞 Contactando',         color: 'var(--contactando)' },
+  { id: 'interesado',  label: '🔥 Interesado',          color: 'var(--interesado)' },
+  { id: 'propuesta',   label: '📋 Propuesta',           color: 'var(--propuesta)' },
+  { id: 'entrevista',  label: '🤝 Entrevista / Reunión', color: '#06b6d4' },
+  { id: 'vendido',     label: '✅ Vendido',              color: 'var(--ganado)' },
+  { id: 'sin_interes', label: '👋 Sin interés',          color: 'var(--perdido)' },
 ]
 
 // ─── Card de lead draggable ───────────────────────────────────────────────────

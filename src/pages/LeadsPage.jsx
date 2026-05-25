@@ -7,12 +7,13 @@ import { es } from 'date-fns/locale'
 import { useAuth } from '../context/AuthContext'
 
 const ESTADO_INFO = {
-  nuevo:       { label: '📥 Nuevo',       css: 'estado-nuevo' },
-  contactando: { label: '📞 Contactando',  css: 'estado-contactando' },
-  interesado:  { label: '🔥 Interesado',   css: 'estado-interesado' },
-  propuesta:   { label: '📋 Propuesta',    css: 'estado-propuesta' },
-  ganado:      { label: '✅ Ganado',        css: 'estado-ganado' },
-  perdido:     { label: '❌ Perdido',       css: 'estado-perdido' },
+  nuevo:       { label: '📥 Nuevo',              css: 'estado-nuevo' },
+  contactando: { label: '📞 Contactando',         css: 'estado-contactando' },
+  interesado:  { label: '🔥 Interesado',          css: 'estado-interesado' },
+  propuesta:   { label: '📋 Propuesta',           css: 'estado-propuesta' },
+  entrevista:  { label: '🤝 Entrevista / Reunión', css: 'estado-entrevista' },
+  vendido:     { label: '✅ Vendido',              css: 'estado-vendido' },
+  sin_interes: { label: '👋 Sin interés',          css: 'estado-sin_interes' },
 }
 
 export default function LeadsPage() {

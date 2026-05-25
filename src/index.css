@@ -16,7 +16,9 @@
   --accent-hover: #5a52e0;
   --accent-glow: rgba(108, 99, 255, 0.15);
 
-  --green: #22c55e;
+  --entrevista: #06b6d4;
+  --vendido: #22c55e;
+  --sin_interes: #ef4444;
   --red: #ef4444;
   --yellow: #eab308;
   --orange: #f97316;
@@ -127,5 +129,6 @@ a { color: inherit; text-decoration: none; }
 .estado-contactando { color: var(--contactando); background: rgba(249,115,22,0.1); border-color: rgba(249,115,22,0.2); }
 .estado-interesado  { color: var(--interesado);  background: rgba(168,85,247,0.1); border-color: rgba(168,85,247,0.2); }
 .estado-propuesta   { color: var(--propuesta);   background: rgba(234,179,8,0.1);  border-color: rgba(234,179,8,0.2); }
-.estado-ganado      { color: var(--ganado);      background: rgba(34,197,94,0.1);  border-color: rgba(34,197,94,0.2); }
-.estado-perdido     { color: var(--perdido);     background: rgba(239,68,68,0.1);  border-color: rgba(239,68,68,0.2); }
+.estado-entrevista  { color: #06b6d4;            background: rgba(6,182,212,0.1);  border-color: rgba(6,182,212,0.2); }
+.estado-vendido     { color: var(--green);       background: rgba(34,197,94,0.1);  border-color: rgba(34,197,94,0.2); }
+.estado-sin_interes { color: var(--red);         background: rgba(239,68,68,0.1);  border-color: rgba(239,68,68,0.2); }
