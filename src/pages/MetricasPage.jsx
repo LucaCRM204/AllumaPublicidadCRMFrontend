@@ -29,16 +29,16 @@ export default function MetricasPage() {
   const [porDia, setPorDia] = useState([])
 
   useEffect(() => {
-    Promise.all([
+    Promise.allSettled([
       api.get('/api/metricas/resumen'),
       api.get('/api/metricas/por-agente'),
       api.get('/api/metricas/por-servicio'),
       api.get('/api/metricas/por-dia'),
     ]).then(([r, a, s, d]) => {
-      setResumen(r.data)
-      setPorAgente(a.data)
-      setPorServicio(s.data)
-      setPorDia(d.data.map(row => ({ ...row, fecha: format(parseISO(row.fecha), 'd MMM', { locale: es }) })))
+      if (r.status === 'fulfilled') setResumen(r.value.data)
+      if (a.status === 'fulfilled') setPorAgente(a.value.data)
+      if (s.status === 'fulfilled') setPorServicio(s.value.data)
+      if (d.status === 'fulfilled') setPorDia(d.value.data.map(row => ({ ...row, fecha: format(parseISO(row.fecha), 'd MMM', { locale: es }) })))
     })
   }, [])
 
